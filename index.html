@@ -1,0 +1,460 @@
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>UrbanWatch | Barangay 176-E Digital Sentinel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Sora:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#d8e2ff",
+              "surface-container-low": "#151b2a",
+              "on-tertiary-fixed": "#001a42",
+              "primary-fixed": "#d4e3ff",
+              "on-secondary-fixed-variant": "#364768",
+              "secondary-fixed": "#d8e2ff",
+              secondary: "#b6c6ee",
+              "outline-variant": "#414751",
+              error: "#ffb4ab",
+              "on-surface-variant": "#c1c7d3",
+              primary: "#60a5fa",
+              "surface-container-highest": "#2e3544",
+              surface: "#0c1321",
+              "on-secondary": "#1f3050",
+              "on-secondary-container": "#a8b8e0",
+              "primary-container": "#60a5fa",
+              "error-container": "#93000a",
+              "secondary-container": "#38496a",
+              tertiary: "#adc6ff",
+              "surface-container": "#19202e",
+              "surface-tint": "#a4c9ff",
+              "surface-dim": "#0c1321",
+              background: "#0c1321",
+              "on-error-container": "#ffdad6",
+              "on-tertiary-container": "#00367a",
+              "surface-container-lowest": "#070e1c",
+              "tertiary-fixed-dim": "#adc6ff",
+              "on-primary": "#00315d",
+              "on-primary-fixed": "#001c39",
+              "on-primary-fixed-variant": "#004883",
+              "surface-bright": "#323949",
+              "tertiary-container": "#71a1ff",
+              "inverse-on-surface": "#2a3040",
+              "inverse-primary": "#0060ac",
+              "on-primary-container": "#003a6b",
+              "inverse-surface": "#dce2f6",
+              outline: "#8b919d",
+              "on-tertiary": "#002e6a",
+              "secondary-fixed-dim": "#b6c6ee",
+              "surface-variant": "#2e3544",
+              "on-tertiary-fixed-variant": "#004395",
+              "on-error": "#690005",
+              "on-background": "#dce2f6",
+              "surface-container-high": "#232a39",
+              "on-secondary-fixed": "#071b3a",
+              "on-surface": "#dce2f6",
+              "primary-fixed-dim": "#a4c9ff",
+            },
+            fontFamily: {
+              headline: ["Space Grotesk"],
+              body: ["Sora"],
+              label: ["Sora"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body data-root="." data-page="features" class="selection:bg-primary-container selection:text-on-primary-container relative"
+  >
+    <div class="fixed inset-0 pointer-events-none z-0">
+      <div class="scanline"></div>
+    </div>
+    <div id="site-header"></div>
+    <main class="pt-20 relative z-10">
+      <!-- Hero Section -->
+      <section
+        class="reveal relative min-h-[850px] flex items-center overflow-hidden"
+      >
+        <div
+          class="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10"
+        >
+          <div class="space-y-8">
+            <div
+              class="reveal inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container/30 border border-outline-variant/20 text-primary text-xs font-bold tracking-widest uppercase"
+            >
+              Public Safety • Barangay 176-E Caloocan
+            </div>
+            <h1
+              class="reveal delay-100 text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tighter text-white"
+            >
+              One trusted space for
+              <span class="text-primary">barangay updates</span> and citizen
+              alerts.
+            </h1>
+            <p
+              class="reveal delay-200 text-lg text-on-surface-variant max-w-lg leading-relaxed"
+            >
+              UrbanWatch keeps residents informed with official advisories,
+              emergency notices, and community announcements — and makes it easy
+              to report incidents directly from your phone.
+            </p>
+            <div class="reveal delay-300 flex flex-wrap gap-4">
+              <button
+                class="bg-[#60a5fa] text-on-primary-fixed px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-primary/10 active:scale-95 transition-all"
+              >
+                Download Citizen App
+              </button>
+              <button
+                class="ghost-border border border-[#60a5fa] text-[#60a5fa] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#60a5fa]/10 active:scale-95 transition-all"
+              >
+                Explore Features
+              </button>
+            </div>
+            <div class="reveal delay-400 grid grid-cols-3 gap-4 pt-8">
+              <div class="p-4 rounded-xl card-glass">
+                <div class="text-2xl font-bold font-headline text-on-surface">
+                  8,400+
+                </div>
+                <div
+                  class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold"
+                >
+                  Active Residents
+                </div>
+              </div>
+              <div class="p-4 rounded-xl card-glass">
+                <div class="text-2xl font-bold font-headline text-on-surface">
+                  7 min
+                </div>
+                <div
+                  class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold"
+                >
+                  Avg. Alert Response
+                </div>
+              </div>
+              <div class="p-4 rounded-xl card-glass">
+                <div class="text-2xl font-bold font-headline text-on-surface">
+                  1,120+
+                </div>
+                <div
+                  class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold"
+                >
+                  Published Advisories
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="reveal delay-500 hidden lg:flex relative justify-center items-center"
+          >
+            <div class="mockup-stack">
+              <!-- Barangay Update Background -->
+              <div class="mockup-item mockup-left">
+                <div class="app-frame">
+                  <img
+                    alt="App Updates"
+                    src="./assets/brgy-update.jpg"
+                  />
+                </div>
+              </div>
+              <!-- Map Background -->
+              <div class="mockup-item mockup-right">
+                <div class="app-frame">
+                  <img
+                    alt="App Map View"
+                    src="./assets/map.jpg"
+                  />
+                </div>
+              </div>
+              <!-- Report a Concern Center -->
+              <div class="mockup-item mockup-center">
+                <div class="app-frame border-slate-800 shadow-2xl">
+                  <img
+                    alt="App Report Concern"
+                    src="./assets/report-concern.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Built for Barangay Section -->
+      <section
+        id="features"
+        class="reveal scroll-target py-16 md:py-24 border-t border-outline-variant/10 relative overflow-hidden"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 md:px-8 relative z-10 grid lg:grid-cols-12 gap-12 lg:gap-16 items-start"
+        >
+          <div class="lg:col-span-7 lg:sticky lg:top-32">
+            <h2
+              class="reveal text-3xl md:text-4xl lg:text-6xl font-headline font-bold text-on-surface mb-6 md:mb-8 leading-tight"
+            >
+              Built for barangay communication and community trust.
+            </h2>
+            <p
+              class="reveal delay-100 text-on-surface-variant text-lg md:text-xl leading-relaxed"
+            >
+              From AI-powered accident detection to real-time push notifications
+              — everything your barangay needs, in one system.
+            </p>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-6">
+              <div
+                class="reveal delay-100 card-glass rounded-2xl p-6 space-y-4"
+              >
+                <div class="text-primary font-bold font-headline">01</div>
+                <h3 class="text-xl font-bold text-on-surface">
+                  Real-Time Alerts
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Instant push notifications for emergency advisories, weather
+                  warnings, and public safety announcements.
+                </p>
+              </div>
+              <div
+                class="reveal delay-200 card-glass rounded-2xl p-6 space-y-4"
+              >
+                <div class="text-primary font-bold font-headline">03</div>
+                <h3 class="text-xl font-bold text-on-surface">
+                  Purok-Based Routing
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Concerns are geographically routed to the correct purok
+                  leader, ensuring the right person handles every report.
+                </p>
+              </div>
+              <div
+                class="reveal delay-300 card-glass rounded-2xl p-6 space-y-4"
+              >
+                <div class="text-primary font-bold font-headline">05</div>
+                <h3 class="text-xl font-bold text-on-surface">
+                  Smart Clustering
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Duplicate reports about the same incident are merged
+                  automatically, consolidating response efforts.
+                </p>
+              </div>
+            </div>
+            <div class="space-y-6 md:pt-12">
+              <div
+                class="reveal delay-150 card-glass rounded-2xl p-6 space-y-4"
+              >
+                <div class="text-primary font-bold font-headline">02</div>
+                <h3 class="text-xl font-bold text-on-surface">
+                  AI Accident Detection
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  YOLO-powered computer vision automatically detects vehicular
+                  accidents from connected CCTV feeds.
+                </p>
+              </div>
+              <div
+                class="reveal delay-250 card-glass rounded-2xl p-6 space-y-4"
+              >
+                <div class="text-primary font-bold font-headline">04</div>
+                <h3 class="text-xl font-bold text-on-surface">
+                  Verified Citizen Reports
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Every submission is AI-reviewed before it reaches officials,
+                  filtering noise so legitimate concerns are prioritized.
+                </p>
+              </div>
+              <div
+                class="reveal delay-350 card-glass rounded-2xl p-6 space-y-4"
+              >
+                <div class="text-primary font-bold font-headline">06</div>
+                <h3 class="text-xl font-bold text-on-surface">
+                  Public Transparency
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Residents can browse active advisories and track concern
+                  statuses without needing an account.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How it Works Section -->
+      <section
+        id="how-it-works"
+        class="reveal scroll-target py-24 bg-surface-container-lowest/30 relative"
+      >
+        <div class="max-w-3xl mx-auto px-8">
+          <div class="text-center mb-16">
+            <h2 class="reveal text-4xl font-headline font-bold text-white mb-4">
+              How it works
+            </h2>
+            <p class="reveal delay-100 text-on-surface-variant text-lg">
+              Three steps to connect with your barangay and stay safe.
+            </p>
+          </div>
+          <div class="space-y-6 relative">
+            <!-- Step 01 -->
+            <div class="reveal delay-100 step-card flex items-start gap-6">
+              <div class="step-number shrink-0 font-headline">01</div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-headline">
+                  Download and verify
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Install the UrbanWatch Citizen app on Android or iOS and
+                  complete a one-time identity verification.
+                </p>
+              </div>
+            </div>
+            <!-- Step 02 -->
+            <div class="reveal delay-200 step-card flex items-start gap-6">
+              <div class="step-number shrink-0 font-headline">02</div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-headline">
+                  Report or browse
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Submit concerns with photos and location, or browse official
+                  barangay announcements anytime.
+                </p>
+              </div>
+            </div>
+            <!-- Step 03 -->
+            <div class="reveal delay-300 step-card flex items-start gap-6">
+              <div class="step-number shrink-0 font-headline">03</div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-headline">
+                  Stay in the loop
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Receive real-time push notifications when concerns are
+                  assigned, updated, or resolved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Announcements -->
+      <section class="reveal py-24 border-t border-outline-variant/10">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="mb-12">
+            <h2
+              class="reveal text-4xl font-headline font-bold text-on-surface mb-2"
+            >
+              Latest public announcements
+            </h2>
+            <p class="reveal delay-100 text-on-surface-variant">
+              Official advisories from barangay management and public safety
+              responders.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Announcement Card 1 -->
+            <div
+              class="reveal delay-200 bg-[#151b2a] rounded-2xl p-6 border border-outline-variant/10 hover:border-primary/50 transition-all group flex flex-col h-full"
+            >
+              <div class="flex justify-between items-center mb-4">
+                <span
+                  class="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-widest"
+                  >Safety</span
+                >
+                <span class="text-on-surface-variant text-[11px]"
+                  >2 hours ago</span
+                >
+              </div>
+              <h3
+                class="text-xl font-headline font-bold text-white mb-3 group-hover:text-primary transition-colors"
+              >
+                Scheduled Power Interruption
+              </h3>
+              <p
+                class="text-on-surface-variant text-sm leading-relaxed mb-6 flex-grow"
+              >
+                Meralco has announced maintenance work affecting Purok 3 and 4
+                this coming Saturday from 9:00 AM to 4:00 PM.
+              </p>
+              <a
+                class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all"
+                href="#"
+              >
+                Read More
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="reveal delay-500 mt-12 text-center">
+            <button
+              class="ghost-border border border-outline-variant/30 text-on-surface px-8 py-3 rounded-lg font-bold text-sm hover:bg-white/5 active:scale-95 transition-all flex items-center gap-2 mx-auto"
+            >
+              View all announcements
+              <span class="material-symbols-outlined text-sm"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="reveal py-24 relative overflow-hidden bg-primary/10">
+        <div
+          class="absolute inset-0 z-0 bg-primary/5 blur-[120px] rounded-full"
+        ></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-8">
+          <div class="max-w-2xl space-y-8">
+            <div class="reveal w-16 h-16 mb-4">
+              <img
+                alt="UrbanWatch Circle Logo"
+                class="w-full h-full object-contain"
+                src="./assets/Logo.png"
+              />
+            </div>
+            <div class="space-y-6">
+              <h2
+                class="reveal delay-100 text-4xl lg:text-5xl font-headline font-bold text-white"
+              >
+                Ready to stay connected with your barangay?
+              </h2>
+              <p class="reveal delay-200 text-lg text-on-surface-variant">
+                Join thousands of residents already using UrbanWatch to report
+                concerns and receive real-time updates from barangay officials.
+              </p>
+              <button
+                class="reveal delay-300 bg-[#60a5fa] text-on-primary-fixed px-8 py-4 rounded-lg font-bold text-lg active:scale-95 transition-all shadow-lg shadow-[#60a5fa]/20"
+              >
+                Download for Android
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="./shared-layout.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
+

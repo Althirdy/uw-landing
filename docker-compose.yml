@@ -1,0 +1,9 @@
+services:
+  urbanwatch-landing:
+    image: nginx:alpine
+    container_name: urbanwatch-landing
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    ports:
+      - "8088:80"
+    restart: unless-stopped

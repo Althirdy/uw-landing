@@ -1,0 +1,356 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Announcements | UrbanWatch</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Sora:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../assets/Logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#d8e2ff",
+              "on-secondary": "#1f3050",
+              "on-primary": "#00315d",
+              "surface-bright": "#323949",
+              "on-tertiary-container": "#00367a",
+              "on-primary-fixed": "#001c39",
+              "tertiary-container": "#71a1ff",
+              "surface-container-low": "#151b2a",
+              "secondary-fixed": "#d8e2ff",
+              "surface-dim": "#0c1321",
+              background: "#0c1321",
+              "on-tertiary": "#002e6a",
+              "surface-variant": "#2e3544",
+              "primary-fixed": "#d4e3ff",
+              "on-surface-variant": "#c1c7d3",
+              "on-primary-container": "#003a6b",
+              "secondary-container": "#38496a",
+              "tertiary-fixed-dim": "#adc6ff",
+              "on-secondary-container": "#a8b8e0",
+              "inverse-surface": "#dce2f6",
+              secondary: "#b6c6ee",
+              "on-secondary-fixed-variant": "#364768",
+              "surface-tint": "#a4c9ff",
+              surface: "#0c1321",
+              "on-secondary-fixed": "#071b3a",
+              "on-surface": "#dce2f6",
+              "secondary-fixed-dim": "#b6c6ee",
+              "error-container": "#93000a",
+              primary: "#60a5fa",
+              "on-error-container": "#ffdad6",
+              "surface-container-lowest": "#070e1c",
+              "on-tertiary-fixed-variant": "#004395",
+              error: "#ffb4ab",
+              "primary-container": "#60a5fa",
+              "on-tertiary-fixed": "#001a42",
+              "on-background": "#dce2f6",
+              "inverse-primary": "#0060ac",
+              "on-error": "#690005",
+              "inverse-on-surface": "#2a3040",
+              "surface-container-high": "#232a39",
+              "primary-fixed-dim": "#a4c9ff",
+              "outline-variant": "#414751",
+              outline: "#8b919d",
+              "surface-container": "#19202e",
+              tertiary: "#adc6ff",
+              "on-primary-fixed-variant": "#004883",
+              "surface-container-highest": "#2e3544",
+            },
+            fontFamily: {
+              headline: ["Space Grotesk"],
+              body: ["Sora"],
+              label: ["Sora"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body
+    data-root=".." data-page="announcements"
+    class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <div class="fixed inset-0 pointer-events-none z-0">
+      <div class="scanline"></div>
+    </div>
+    <div id="site-header"></div>
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto relative z-10">
+      <!-- Header Section -->
+      <header class="mb-12 reveal">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between gap-6"
+        >
+          <div class="space-y-2">
+            <span
+              class="font-label text-xs uppercase tracking-[0.3em] text-primary font-bold"
+              >Protocol Updates</span
+            >
+            <h1
+              class="font-headline text-5xl md:text-6xl font-bold tracking-tighter text-white"
+            >
+              Announcements
+            </h1>
+            <p class="text-on-surface-variant max-w-2xl text-lg">
+              Centralized intelligence stream for community safety protocols,
+              infrastructure developments, and municipal updates.
+            </p>
+          </div>
+        </div>
+      </header>
+      <!-- Filter & Search Bar -->
+      <section
+        class="mb-16 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center reveal"
+      >
+        <div class="lg:col-span-8 flex flex-wrap gap-3">
+          <button
+            class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label text-xs font-bold uppercase tracking-widest transition-all"
+          >
+            All News
+          </button>
+          <button
+            class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant ghost-border font-label text-xs font-bold uppercase tracking-widest hover:bg-surface-container transition-all"
+          >
+            Safety
+          </button>
+          <button
+            class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant ghost-border font-label text-xs font-bold uppercase tracking-widest hover:bg-surface-container transition-all"
+          >
+            Infrastructure
+          </button>
+          <button
+            class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant ghost-border font-label text-xs font-bold uppercase tracking-widest hover:bg-surface-container transition-all"
+          >
+            Community
+          </button>
+        </div>
+        <div class="lg:col-span-4 relative">
+          <span
+            class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-xl"
+            >search</span
+          >
+          <input
+            class="w-full bg-surface-container-low border-none focus:ring-0 focus:border-primary border-b-2 border-transparent text-on-surface py-4 pl-12 pr-4 font-body transition-all outline-none placeholder:text-outline/50"
+            placeholder="Search directives..."
+            type="text"
+          />
+        </div>
+      </section>
+      <!-- Announcements Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <article
+          class="announcement-card reveal group relative flex flex-col card-glass overflow-hidden transition-all duration-500 hover:translate-y-[-4px]"
+        >
+          <div class="aspect-video overflow-hidden relative">
+            <img
+              alt="City Street Night"
+              class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9xj6oWK3l08PsYFIDJq1-D8NTSHLRUPCkn_uS2W9Socj8iCWYaAnoaisF65Nag_27X3LR-U0LwYox1HBfH-uxnyvuTd9pZkrLvS5K994mQJp3_kYhIfL1IJr5Uv7O9vU3ypV-8cf7h4-r4xQJgdJJXzd93Pd3nPAx9yzV6LmqSDr59lWspA-FXFZGevhQqQAqD6cKbSi__irGVbht-W6EJSg6Bl3B0n8jTgbwc66H_d6pzBLqoL5dKMrPGcCO90C6CrNCvwb9uQ"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#0c1321] via-transparent to-transparent"
+            ></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-primary/20 backdrop-blur-md text-primary font-label text-[10px] font-black uppercase tracking-widest rounded-full border border-primary/30"
+                >Safety</span
+              >
+            </div>
+          </div>
+          <div class="p-8 flex-grow flex flex-col">
+            <time
+              class="font-headline text-xs text-outline tracking-widest mb-4"
+              >OCT 24, 2023 | 09:42 UTC</time
+            >
+            <h3
+              class="font-headline text-2xl font-bold text-white mb-4 leading-tight group-hover:text-primary transition-colors"
+            >
+              Grid 7: Advanced Lighting Protocol
+            </h3>
+            <p class="text-on-surface-variant body-md line-clamp-3 mb-8">
+              Implementation of high-intensity reactive lighting in the North
+              Sector. Residents should expect intermittent testing between 23:00
+              and 04:00.
+            </p>
+            <div
+              class="mt-auto pt-6 border-t border-outline-variant/10 flex items-center justify-between"
+            >
+              <span class="font-label text-xs font-bold uppercase text-outline"
+                >Ref: UW-4402</span
+              >
+              <a
+                class="text-primary flex items-center gap-2 group/link"
+                href="#"
+              >
+                <span
+                  class="font-label text-xs font-bold uppercase tracking-widest"
+                  >Details</span
+                >
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article
+          class="announcement-card reveal group relative flex flex-col card-glass overflow-hidden transition-all duration-500 hover:translate-y-[-4px]"
+        >
+          <div class="aspect-video overflow-hidden relative">
+            <img
+              alt="Infrastructure"
+              class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmGJUmF3HhRrvA5uiqM_cpcgh68mddn5xqG7yYGueR5xcyiyYr93ICT2f_JVd_owmFAhiEWfTLcenSnA_7Db50zCdN9gSIwwKLi7Up25hTxUODo1GZUjRjbe1yNdXgCfcClnKxnxg9MdssI70sG5DWALcOMWneZ1bfSJ5hNK5rhLGQmyI47iEaqerqhKk0pcV8G97KNTOSlUUoAqo9ChkTPzUyunW7QY03GO1BTpSJjuDQAhgedzD8maS-K1zpVW2WWb_7F76pVA"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#0c1321] via-transparent to-transparent"
+            ></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-tertiary/20 backdrop-blur-md text-tertiary font-label text-[10px] font-black uppercase tracking-widest rounded-full border border-tertiary/30"
+                >Infrastructure</span
+              >
+            </div>
+          </div>
+          <div class="p-8 flex-grow flex flex-col">
+            <time
+              class="font-headline text-xs text-outline tracking-widest mb-4"
+              >OCT 22, 2023 | 14:15 UTC</time
+            >
+            <h3
+              class="font-headline text-2xl font-bold text-white mb-4 leading-tight group-hover:text-tertiary transition-colors"
+            >
+              Smart Pavement Integration
+            </h3>
+            <p class="text-on-surface-variant body-md line-clamp-3 mb-8">
+              Main transit arteries will be upgraded with piezoelectric tiles to
+              capture energy from foot traffic. Minimal disruptions anticipated.
+            </p>
+            <div
+              class="mt-auto pt-6 border-t border-outline-variant/10 flex items-center justify-between"
+            >
+              <span class="font-label text-xs font-bold uppercase text-outline"
+                >Ref: UW-4391</span
+              >
+              <a
+                class="text-tertiary flex items-center gap-2 group/link"
+                href="#"
+              >
+                <span
+                  class="font-label text-xs font-bold uppercase tracking-widest"
+                  >Details</span
+                >
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article
+          class="announcement-card reveal group relative flex flex-col card-glass overflow-hidden transition-all duration-500 hover:translate-y-[-4px]"
+        >
+          <div class="aspect-video overflow-hidden relative">
+            <img
+              alt="Community"
+              class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBxTfMyPx0NHlPTRxGV4oM0sx_oUm3qFaELxTQNjTHux-UGry3BmlaDE4-FAAjXFwdyd1WXyOLRZi28anPE5Ac0ly9II1g9r_xWTOzgln66r0dOsd_-qflhpILHM_-w_58qE8-uFve60_FUnQRbAfmYSggBuDVP6kty96UJn23Nfu2B136t-LJXyqeWSwDmrQ-XNCPGy4PJNyON3J44SsnIiR9oNyHzCAAYgnFM0k0lRsgjaRMDnwb2Sg0tT9f99VvOr4l_Ao7xA"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#0c1321] via-transparent to-transparent"
+            ></div>
+            <div class="absolute top-4 left-4">
+              <span
+                class="px-3 py-1 bg-secondary/20 backdrop-blur-md text-secondary font-label text-[10px] font-black uppercase tracking-widest rounded-full border border-secondary/30"
+                >Community</span
+              >
+            </div>
+          </div>
+          <div class="p-8 flex-grow flex flex-col">
+            <time
+              class="font-headline text-xs text-outline tracking-widest mb-4"
+              >OCT 21, 2023 | 11:30 UTC</time
+            >
+            <h3
+              class="font-headline text-2xl font-bold text-white mb-4 leading-tight group-hover:text-secondary transition-colors"
+            >
+              Digital Town Hall: Q4 Goals
+            </h3>
+            <p class="text-on-surface-variant body-md line-clamp-3 mb-8">
+              Join the Council for a VR-synced town hall meeting. Discussing
+              safety allocations and new citizen reporting incentive programs.
+            </p>
+            <div
+              class="mt-auto pt-6 border-t border-outline-variant/10 flex items-center justify-between"
+            >
+              <span class="font-label text-xs font-bold uppercase text-outline"
+                >Ref: UW-4385</span
+              >
+              <a
+                class="text-secondary flex items-center gap-2 group/link"
+                href="#"
+              >
+                <span
+                  class="font-label text-xs font-bold uppercase tracking-widest"
+                  >Details</span
+                >
+                <span
+                  class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- Pagination -->
+      <div class="mt-20 flex flex-col items-center gap-6 reveal">
+        <button
+          class="group flex items-center gap-4 px-10 py-5 bg-surface-container-low ghost-border text-white transition-all hover:bg-surface-container-high"
+        >
+          <span
+            class="font-headline font-bold text-sm uppercase tracking-[0.2em]"
+            >Load Archived Intel</span
+          >
+          <span
+            class="material-symbols-outlined text-lg group-hover:rotate-180 transition-transform"
+            >expand_more</span
+          >
+        </button>
+        <p
+          class="font-label text-[10px] uppercase text-outline tracking-widest"
+        >
+          Showing 3 of 142 Total Notifications
+        </p>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../shared-layout.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
+
