@@ -114,3 +114,10 @@
         .scroll-target {
             scroll-margin-top: 96px;
         }
+        .modal-scroll-clean {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .modal-scroll-clean::-webkit-scrollbar {
+            display: none;
+        }
